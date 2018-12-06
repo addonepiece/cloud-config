@@ -4,7 +4,7 @@ server:
 spring:
   application:
     # 服务与服务之间相互调用一般都是根据这个name 。
-    name: auth-service-dev-${envzone}
+    name: auth-service-dev
   datasource:
     url: jdbc:mysql://10.10.10.166:3306/rbac?useSSL=false&useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false
     username: ENC(Q+Pn4LhPX8OZaLFS6EuoEg==)
