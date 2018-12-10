@@ -14,7 +14,7 @@ zuul:
   routes:
     auth-api:
       path: /auth-api/**
-      serviceId: auth-service
+      serviceId: auth-service-dev
     cms-api:
       path: /cms-api/**
       serviceId: cms-service
