@@ -10,7 +10,7 @@ spring:
     username: ENC(Q+Pn4LhPX8OZaLFS6EuoEg==)
     password: ENC(Q+Pn4LhPX8OZaLFS6EuoEg==)
     driver-class-name: com.mysql.jdbc.Driver
-#    springboot2.0+默认为hikari 此配置项可删除
+    #    springboot2.0+默认为hikari 此配置项可删除
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
       minimum-idle: 3
@@ -48,15 +48,15 @@ spring:
     testOnBorrow: true
     #在空闲时检查有效性, 默认false
     testWhileIdle: true
-   
+
     #redis集群配置
     #spring.cluster.nodes=192.168.1.1:7001,192.168.1.1:7002,192.168.1.1:7003,192.168.1.1:7004,192.168.1.1:7005,192.168.1.1:7006
     #spring.cluster.max-redirects=3
-     
+
     #哨兵模式
     #sentinel.host1=192.168.1.1
     #sentinel.port1=26379
-     
+
     #sentinel.host2=192.168.1.2
     #sentinel.port2=26379
 
@@ -70,5 +70,5 @@ eureka:
 
 jasypt:
   encryptor:
-#    加解密的时候使用的密钥(密码盐)
+    #    加解密的时候使用的密钥(密码盐)
     password: 123456
