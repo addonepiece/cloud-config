@@ -1,10 +1,9 @@
 server:
-server:
   port: 8761
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: 47.99.211.9
   client:
     # 表明自己是一个eureka server。
     register-with-eureka: false
@@ -14,4 +13,4 @@ eureka:
 
 spring:
   application:
-    name: cloud-eureka-server-dev
+    name: cloud-eureka-server

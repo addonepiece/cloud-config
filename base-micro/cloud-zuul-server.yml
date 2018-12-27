@@ -1,0 +1,20 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://47.99.211.9:8761/eureka/
+
+server:
+  port: 8762
+
+spring:
+  application:
+    name: cloud-zuul-server
+
+zuul:
+  routes:
+    auth-api:
+      path: /auth-api/**
+      serviceId: auth-service
+    cms-api:
+      path: /cms-api/**
+      serviceId: cms-service

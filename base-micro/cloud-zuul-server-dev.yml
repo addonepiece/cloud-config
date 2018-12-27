@@ -8,13 +8,13 @@ server:
 
 spring:
   application:
-    name: cloud-zuul-server
+    name: cloud-zuul-server-dev
 
 zuul:
   routes:
     auth-api:
-      path: /auth-api/**
+      path: /auth-api-dev/**
       serviceId: auth-service-dev
     cms-api:
-      path: /cms-api/**
-      serviceId: cms-service
+      path: /cms-api-dev/**
+      serviceId: cms-service-dev
